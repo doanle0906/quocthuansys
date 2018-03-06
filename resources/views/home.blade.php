@@ -9,8 +9,8 @@
 
             <a href="index.html" class="logo">
                 <!-- You can also use image as a logo the example below -->
-                <img class="logo-white" style="width: 200px; height: 100px;" src="{{asset('public/img/content/logo.jpg')}}">
-                <img class="logo-black" style="width: 200px; height: 100px;" src="{{asset('public/img/content/logo.jpg')}}">
+                <img class="logo-white" style="width: 200px; height: 100px;" src="{{asset('public/img/content/logo.png')}}">
+                <img class="logo-black" style="width: 200px; height: 100px;" src="{{asset('public/img/content/logo.png')}}">
             </a>
 
             <h1 style="display:none">
