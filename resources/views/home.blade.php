@@ -9,8 +9,8 @@
 
             <a href="index.html" class="logo">
                 <!-- You can also use image as a logo the example below -->
-                <img class="logo-white" src="../theme.hstatic.net/1000075078/1000297410/14/logobb80.png?v=30" alt="">
-                <img class="logo-black" src="../theme.hstatic.net/1000075078/1000297410/14/logo-blackbb80.png?v=30" alt="">
+                <img class="logo-white" style="width: 200px; height: 100px;" src="{{asset('public/img/content/logo.jpg')}}">
+                <img class="logo-black" style="width: 200px; height: 100px;" src="{{asset('public/img/content/logo.jpg')}}">
             </a>
 
             <h1 style="display:none">
@@ -35,12 +35,12 @@
         <div class="homeBxSliderWrap">
 
             <div class="homeBxSlider" style="display: none">
-                <div class="slide active" data-slide="0" style="background-image: url('../theme.hstatic.net/1000075078/1000297410/14/slide-1bb80.jpg?v=30');">
+                <div class="slide active" data-slide="0" style="background-image: url({{asset('public/img/background/bg1.jpg')}});">
                     <div class="slideDesc">
                         <div class="ct-caption">
-                            <h2>       Cà Phê nhé!</h2>
-                            <a class="learnMore" href="https://order.thecoffeehouse.com/">Đặt hàng online</a>
-                            <a class="learnMore" href="#store">đến cửa hàng</a>
+                            <h2>Gym buede nhé!</h2>
+                            <a class="learnMore" href="https://order.thecoffeehouse.com/">đăng ký thành viên</a>
+                            <a class="learnMore" href="#store">chi nhánh</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         <section id="intro" class="wow fadeInUp section-class-name">
             <div class="container">
                 <div class="intro">
-                    <img src="../theme.hstatic.net/1000075078/1000297410/14/Paper-cupbb80.png?v=30" alt="">
+                    <img src="{{asset('public/img/content/intro.jpg')}}" alt="" style="height: 80%">
                     <h2>cà phê nhé</h2>
                     <p>“Đi cà phê” từ lâu không chỉ đơn thuần là uống một tách cà phê mà còn là dịp gặp mặt và trò chuyện cùng bạn bè. Tại The Coffee House, chúng tôi trân trọng và đề cao giá trị kết nối giữa con người và trải nghiệm của khách hàng. Chúng tôi được truyền cảm hứng từ những tách cà phê và thức uống mình tạo ra. Chúng tôi tin tưởng mạnh mẽ rằng những thức uống với chất lượng tốt nhất được phục vụ trong không gian thân thiện bởi những nhân viên tận tâm tại The Coffee House sẽ mang lại những niềm vui bạn có thể chia sẻ cùng bạn bè và gia đình.</p>
                 </div>
@@ -71,7 +71,7 @@
         </section><!--end intro-->
 
 
-        <section id="store" class="section-class-name">
+        <section id="store" class="section-class-name" style="margin-top: 150px;">
             <div class="left-store wow fadeInUp">
                 <h3>các cửa hàng<br>the coffee house </h3>
 
