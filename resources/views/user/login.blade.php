@@ -1,3 +1,4 @@
+<link rel="stylesheet" href={{asset('public/design/plugins/bootstrap/3.3.6/css/bootstrap.min.css')}}>
 <link rel="stylesheet" href={{asset('public/css/login.css')}}>
 <script src={{asset('public/js/login.js')}}></script>
 <script src={{asset('public/design/js/api.jquery.min.js')}}></script>
@@ -12,6 +13,9 @@
         <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
         <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
         <p id="profile-name" class="profile-name-card"></p>
+        @if(Session::has('message'))
+            <p class="alert alert-danger">{{ Session::get('message') }}</p>
+        @endif
         <form class="form-signin" method="post" action="{{route('user.login')}}">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class UsersController extends Controller
 {
@@ -33,9 +34,10 @@ class UsersController extends Controller
            }
         }
         if(! $information['sts']) {
-            return view('user.login',['information' => $information ]);
+            return Redirect::to('/user/login')->with('message', $information['msg']);
         }
-        return view('home',['information' => $information ]);
+
+        return Redirect::to('/home')->with('message', 'Đăng nhập thành công');
 
     }
 }
