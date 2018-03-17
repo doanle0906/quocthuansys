@@ -10,10 +10,17 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+use Illuminate\Support\Facades\DB;
 Route::get('/', function () {
     return view('welcome');
 });
 
 
 Route::get('/home', ['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('/test',function (){
+
+    return DB::select('exec sp_CheckLogin ?, ?',['admin','admin']);
+});
+
+Route::get('/user/login',['as' => 'user.login', 'uses' => 'UsersController@login']);
+Route::post('/user/login',['as' => 'user.login', 'uses' => 'UsersController@postLogin']);

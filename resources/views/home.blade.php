@@ -65,7 +65,7 @@
                 <div class="intro">
                     <img src="{{asset('public/img/content/intro.jpg')}}" alt="" style="height: 80%">
                     <h2>Tập Gym nhé!</h2>
-                    <p>“Đi tập nhé” từ lâu không chỉ đơn thuần là uống một tách cà phê mà còn là dịp gặp mặt và trò chuyện cùng bạn bè. Tại QUOC THUAN GYM, chúng tôi trân trọng và đề cao giá trị kết nối giữa con người và trải nghiệm của khách hàng. Chúng tôi được truyền cảm hứng từ những tách cà phê và thức uống mình tạo ra. Chúng tôi tin tưởng mạnh mẽ rằng những thức uống với chất lượng tốt nhất được phục vụ trong không gian thân thiện bởi những nhân viên tận tâm tại QUOC THUAN GYM sẽ mang lại những niềm vui bạn có thể chia sẻ cùng bạn bè và gia đình.</p>
+                    <p>“Đi tập nhé” ,The idea behind Gym Fit was to create a truly unique gym, one that has the equipment and knowhow to appeal to every single person in the community. A gym where the owners and staff truly care about the people that matter, and that’s YOU. The serious trainer looking for a place to achieve their performance goal, whether that be in sport, bodybuilding. The woman looking to get back into shape after having their first child, The man looking to gain back strength following surgery and the complete newcomer who wants to change their lifestyle and discover something new</p>
                 </div>
             </div>
         </section><!--end intro-->
@@ -513,7 +513,6 @@
                                 </a>
                                 <h5>QUOC THUAN GYM</h5>
                                 <h4><a href="javascript:;" class="show_qw" data-handle="/products/6a-ngo-thoi-nhiem">6A Ngô Thời Nhiệm</a></h4>
-
 
 
 
@@ -1603,6 +1602,7 @@
                     <li ><a href="blogs/tuyen-dung.html">Tuyển dụng</a></li>
 
                     <li ><a href="pages/lien-he.html">Liên hệ</a></li>
+                    <li ><a href="{{route('user.login')}}">Login</a></li>
 
                 </ul>
             </div><!--ct-footer-->
@@ -1628,7 +1628,7 @@
             <li ><a href="blogs/tuyen-dung.html">Tuyển dụng</a></li>
 
             <li ><a href="pages/lien-he.html">Liên hệ</a></li>
-
+            <li ><a href="{{route('user.login')}}">Login</a></li>
         </ul>
     </div>
     <style>
